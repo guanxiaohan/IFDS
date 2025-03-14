@@ -1,0 +1,42 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "npm",
+            "script": "dev",
+            "path": "client",
+            "problemMatcher": [
+                "$tsc"
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "focus": true
+            },
+            "label": "Run Client in Vite",
+            "detail": "vite"
+        },
+        {
+            "type": "npm",
+            "script": "server",
+            "path": "server",
+            "problemMatcher": [
+                "$tsc"
+            ],
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "focus": true
+            },
+            "label": "Run server",
+            "detail": "nodemon index.js"
+        },
+        {
+            "type": "shell",
+            "command": "./client/build.ps1",
+            "label": "Build client",
+            "detail": "build client and move to server",
+            "problemMatcher": []
+        }
+    ]
+}
